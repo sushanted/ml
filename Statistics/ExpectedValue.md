@@ -127,6 +127,46 @@ $ = \sum_{i=1}^{n} p(x_i)(x_i) + \sum_{j=1}^{m}p(y_j)(y_j) $
 ### $ = E[X] + E[Y] $  
 
 
+#### LOTUS
+
+Function of a random variable, $Y = X ^2 $, there are two values of X for each unique value of Y, e.g. for Y=4, X = {2,-2}  
+
+Therefore $ P(Y=4) = P(X=-2)+P(X=2) $ 
+
+The expected value for X is $ \sum_i x_i P_X(x_i) $  
+
+Here $x_i$ are all the realized values of X, like 1,2,3,4,5,6 for a dice.  
+
+Now expected value of Y = $ \sum_i y_i P_Y(y_i) $  
+
+For $ Y = X^2 $  
+
+$ P_Y(1) = P_X(-1)+P_X(1) $  
+$ P_Y(2) = P_X(-2)+P_X(2) $  and so on
+
+And realized values of Y are all positive, when X = -1, Y = 1; when X = 1, Y = 1 again    
+
+$ EY = \sum_i y_i P_Y(y_i) $ 
+
+Assume X can take only following values {-2,-1,1,2}, then Y will have only following values {1,4}  
+
+$ EY = 1 P_Y(1) + 4 P_Y(4)  $
+
+$ = 1 [P_X(-1)+P_X(1)] + 4 [P_X(-2)+P_X(2)]  $  
+
+$ = 1P_X(-1)+ 1P_X(1) + 4 P_X(-2) + 4 P_X(2)  $   
+
+Conveniently distributing values of x for the same y :
+
+$ = (-1)^2P_X(-1)+ 1^2 P_X(1) + (-2)^2 P_X(-2) + 2^2 P_X(2) $  
+
+$ = \sum_i (x_i)^2 P_X(i) $  
+
+In general, for any function g:  
+
+$ E[g(X)]= \sum_i g(x_i) P_X(i) $  
+
+
 
 
 
